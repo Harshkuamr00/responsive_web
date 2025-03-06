@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Default body background color */
+    transition: background-color 0.5s ease; /* Smooth transition for background color */
+}
+
+#responsive {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* Default section background color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.5s ease; /* Smooth transition for section background color */
+}
+
+#heading {
+    color: #333;
+}
+
+#h2 {
+    color: #666;
+}
+
+#mysubmit {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#mysubmit:hover {
+    background-color: #3e8e41;
+}
+
+/* Celebration Animation */
+@keyframes celebrate {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.1); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.celebrate {
+    animation: celebrate 0.5s ease-in-out infinite; /* Animation for celebration */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #responsive {
+        width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    #heading {
+        font-size: 1.5em;
+    }
+
+    #h2 {
+        font-size: 1em;
+    }
+}
